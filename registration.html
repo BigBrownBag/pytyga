@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha2/css/bootstrap.min.css" integrity="sha384-DhY6onE6f3zzKbjUPRc2hOzGAdEf4/Dz+WJwBvEYL/lkkIsI3ihufq9hk9K4lVoK" crossorigin="anonymous">
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha2/js/bootstrap.bundle.min.js" integrity="sha384-BOsAfwzjNJHrJ8cZidOg56tcQWfp6y72vEJ8xQ9w6Quywb24iOsW913URv1IS4GD" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css">
+    <title>Регистрация</title>
+</head>
+<body>
+    <div class="all-content">
+    <nav class="navbar py-0 navbar-expand-lg navbar-light bg-light bg-custom">
+        <div class="container">
+        <a class="navbar-brand" href="#"><img src="all-media/logo.png" alt="icon">Центр управления занятиями</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="#">Главная</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Авторизация</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" href="#">Регистрация</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Поддержка</a>
+            </li>
+          </ul>
+        </div>
+        </div>
+    </nav>
+    <article class="text1">
+        <div class="container jumbotron text-center">
+         <h1>Расписание встреч на любой случай</h1>
+         <p class="lead">Получите расписание по требуемым параметрам. 
+            Оптимизируйте своё время благодаря автоматизированному процессу планирования.</p>
+        <button class="btn btn-secondary" data-toggle="modal" data-target="#regModal" style="background-color:  hsla(145,50%,62%,1);">Регистрация</button>
+    </div>
+    </article>
+    <!-- regModal-->
+    <div class="modal fade" id="regModal" tabindex="-1" aria-labelledby="regModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h3 class="modal-title" id="regModalLabel">Регистрация</h3>
+                    <button type="button" class="btn-close" data-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <form action="" method="POST">
+                        <div class="row mb-3">
+                            <label for=inputEmail"" class="col-sm-2 col-form-label">Email:</label>
+                            <div class="сol-sm-10">
+                                <input type="email" class="form-control" id="inputEmail">
+                            </div>
+                        </div>
+                        <div class="row mb-3">
+                            <label for=inputPass"" class="col-sm-2 col-form-label">Пароль:</label>
+                            <div class="сol-sm-8">
+                                <input type="password" class="form-control" id="inputPass">
+                            </div>
+                        </div>
+                        <div class="row mb-3">
+                            <label for=inputPass"" class="col-sm-2 col-form-label">Пароль&nbspеще&nbspраз:</label>
+                            <div class="сol-sm-8">
+                                <input type="password" class="form-control" id="inputPass">
+                            </div>
+                        </div>
+                        <div class="row mb-3">
+                            <label for=inputName"" class="col-sm-3 col-form-label">Имя:</label>
+                            <div class="сol-sm-9">
+                                <input type="text" class="form-control" id="inputName">
+                            </div>
+                        </div>
+                        <div class="row mb-3">
+                            <label for=inputSurname"" class="col-lg-3 col-form-label">Фамилия:</label>
+                            <div class="сol-sm-9">
+                                <input type="text" class="form-control" id="inputSurname">
+                            </div>
+                        </div>
+                        <div class="row mb-3">
+                            <label for=inputLogin"" class="col-lg-3 col-form-label">Логин:</label>
+                            <div class="сol-sm-9">
+                                <input type="text" class="form-control" id="inputLogin">
+                            </div>
+                        </div>
+                        <div class="row mb-3">
+                            <label for=inputAge"" class="col-lg-3 col-form-label">Возраст:</label>
+                            <div class="сol-sm-9">
+                                <input type="text" class="form-control" id="inputAge">
+                            </div>
+                        </div>
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <a href="#">Уже зарегистрированы?</a>
+                    <button class="btn btn-secondary"data-toggle="modal" data-target="#regModalnext" style="background-color:  hsla(145,50%,62%,1);">Готово</button>
+                    <button class="btn btn-secondary" style="background-color: hsla(145,50%,62%,1);" data-dismiss="modal">Отменить</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- regModal -->
+    <!-- regModalnext -->
+    <div class="modal fade" id="regModalnext" tabindex="-1" aria-labelledby="regModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h3 class="modal-title" id="regModalLabel">Регистрация</h3>
+                    <button type="button" class="btn-close" data-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <form action="">
+                        <div class="row mb-3">
+                            <label for=inputEmail"" class="col-sm-2 col-form-label">Введите&nbspкод,&nbspкоторый&nbspмы&nbspвыслали&nbspвам&nbspна&nbspпочту:</label>
+                            <div class="сol-sm-10">
+                                <input type="email" class="form-control" id="inputEmail">
+                            </div>
+                        </div>
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <a href="#">Выслать код повторно?</a>
+                    <button class="btn btn-secondary" data-toggle="modal" style="background-color:  hsla(145,50%,62%,1);">Готово</button>
+                    <button class="btn btn-secondary" style="background-color: hsla(145,50%,62%,1);" data-dismiss="modal">Отменить</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- regModalnext -->
+</body> 
+</html>

@@ -1,0 +1,56 @@
+
+.bg-custom{
+    background-color: hsla(145,50%,62%,0.4) !important;
+    border-radius: 15px 0px;
+}
+.navbar{
+    margin:29px 29px 41px 29px;
+}
+.jumbotron{
+    background: url('all-media/flat-lay-business-agenda.png');
+}
+.navbar .nav-link{
+    font-size: 20px;
+}
+.navbar-brand{
+    font-size: 30px;
+}
+.text1{
+    padding: 0 75px;
+}
+.display-4{
+    font-size: 35px;
+    font-weight: 500;
+}
+.lead{
+    font-size: 25px;
+    font-weight: 350;
+}
+.forma{
+    margin-top: 50px;
+}
+.btnkk .btn{
+    margin-top: 15px;
+    border: 0;
+    animation: none;
+    text-decoration: none;
+    outline: 0 !important;
+    display: inline-block;
+    color: white;
+    padding: 20px 30px;
+    margin: 10px 20px;
+    border-radius: 10px;
+    background-color: hsla(145,50%,62%,0.9);
+}
+.btnkk .btn::before,
+.btnkk .btn::after{
+    border: 0;
+    outline: 0 !important;
+}
+.jumbotron{
+    padding: 50px;
+}
+.jumbotron p{
+    padding-top: 40px;
+    padding-bottom: 20px;
+}
